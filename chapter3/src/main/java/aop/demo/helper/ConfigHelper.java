@@ -1,7 +1,7 @@
-package org.smart4j.framework.helper;
+package aop.demo.helper;
 
-import org.smart4j.framework.ConfigConstant;
-import org.smart4j.framework.util.PropsUtil;
+import aop.demo.util.PropsUtil;
+import aop.demo.ConfigConstant;
 
 import java.util.Properties;
 

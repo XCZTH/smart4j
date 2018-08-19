@@ -1,4 +1,4 @@
-package org.smart4j.framework.util;
+package aop.demo.util;
 
 import org.apache.commons.lang3.StringUtils;
 

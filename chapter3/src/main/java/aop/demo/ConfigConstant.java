@@ -1,4 +1,4 @@
-package org.smart4j.framework;
+package aop.demo;
 
 public interface ConfigConstant {
 

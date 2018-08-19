@@ -1,8 +1,8 @@
-package org.smart4j.framework.helper;
+package aop.demo.helper;
 
-import org.smart4j.framework.annotation.Controller;
-import org.smart4j.framework.annotation.Service;
-import org.smart4j.framework.util.ClassUtil;
+import aop.demo.annotation.Controller;
+import aop.demo.annotation.Service;
+import aop.demo.util.ClassUtil;
 
 import java.util.HashSet;
 import java.util.Set;

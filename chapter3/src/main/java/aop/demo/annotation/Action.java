@@ -1,4 +1,4 @@
-package org.smart4j.framework.annotation;
+package aop.demo.annotation;
 
 
 import java.lang.annotation.ElementType;
@@ -7,9 +7,14 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 依赖注入注解
+ * 方法注解
  */
-@Target(ElementType.FIELD)
+@Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Inject {
+public @interface Action {
+
+    /**
+     * 请求类型和路径
+     */
+    String value();
 }

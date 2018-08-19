@@ -1,4 +1,4 @@
-package org.smart4j.framework.util;
+package aop.demo.util;
 
 
 import org.slf4j.Logger;
@@ -10,9 +10,9 @@ import java.lang.reflect.Method;
 /**
  * 反射工具类
  */
-public final class ReflectionUitil {
+public final class ReflectionUtil {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ReflectionUitil.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ReflectionUtil.class);
 
     public static Object newInstance(Class<?> cls) {
         Object instance;

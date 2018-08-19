@@ -1,11 +1,9 @@
-package org.smart4j.framework.util;
+package aop.demo.util;
 
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import sun.management.snmp.jvminstr.JvmRTInputArgsEntryImpl;
 
-import javax.print.DocFlavor;
 import java.io.File;
 import java.io.FileFilter;
 import java.net.JarURLConnection;
@@ -31,6 +29,17 @@ public final class ClassUtil {
         return Thread.currentThread().getContextClassLoader();
     }
 
+
+    public static Class<?> loadClass(String className) {
+        Class<?> cls;
+        try {
+            cls = Class.forName(className, false, getClassLoader());
+        } catch (ClassNotFoundException e) {
+            LOGGER.error("load class failure", e);
+            throw new RuntimeException(e);
+        }
+        return cls;
+    }
     /**
      * 加载类
      * @param className
